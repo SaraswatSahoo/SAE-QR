@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.reg-form{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg-form h1{
+    color: white;
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+
+@media (width < 700px){
+    .reg-form h1{
+        font-size: 20px;
+    }
+}
+
+#container{
+    color: white;
+    max-width: 1000px;
+    width: 100%;
+    border:3px solid red;
+    padding: 25px 30px;
+    border-radius: 20px;
+}
+
+#container .title{
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+}
+
+#container .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 25%;
+    border-radius: 5px;
+    background: red;
+}
+
+.content form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0 20px 0;
+}
+
+form .user-details .input-box{
+    margin-bottom: 20px;
+    width: 420px;
+}
+
+form .input-box .details{
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.user-details .input-box input{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-left: 15px;
+    border: 2px solid #ccc;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: white;
+}
+
+.user-details .input-box input:focus{
+    border-color: red;
+}
+
+.btn{
+    color: white;
+    background-color: red;
+    border: none;
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 400;
+    border-radius: 10px;
+    margin-left: 400px;
+    margin-top: 20px;
+}
+
+#submit-success{
+    color: red;
+    font-size: 30px;
+    display: none;
+}
+
+
